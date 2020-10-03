@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-decoration: none;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+p {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    color: white;
+    letter-spacing: .05rem;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.section-title span {
+    color: rgb(46, 120, 102);
+}
+
+
+/* Hero Section */
+
+#hero {
+    background-image: url(../images/virus.png);
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+
+#hero .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-end;
+}
+
+#hero h1 {
+    display: block;
+    width: fit-content;
+    font-size: 5rem;
+    position: relative;
+    color: white;
+    letter-spacing: .5rem;
+}
+
+#hero p {
+    display: block;
+    width: fit-content;
+    font-size: 2rem;
+    position: relative;
+    color: rgb(46, 120, 102);
+    float: right;
+}
+
+
+/*  End Hero Section */
+
+
+/* Efectos Section */
+
+#efectos {
+    background-color: rgb(8, 9, 14);
+}
+
+#efectos .efectos {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#efectos .efecto-top {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#efectos .efecto-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+#efectos .efecto-item {
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(../images/personas.jpg);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    /*llamo al de abajo */
+    z-index: 1;
+    overflow: hidden;
+}
+
+#efectos .efecto-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+
+#efectos .efecto-bottom .icon {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+#efectos .efecto-item h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#efectos .efecto-item p {
+    text-align: left;
+}
+
+
+/* End Efectos Section */
+
+
+/* Regiones Section */
+
+#regiones {
+    background-image: url(../images/virus.png);
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+#regiones::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+
+#regiones .regiones {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#regiones .regiones-header h1 {
+    margin-bottom: 50px;
+}
+
+#regiones .all-regiones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#regiones .region-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#regiones .region-info {
+    padding: 30px;
+    flex-basis: 50%;
+    background-color: rgb(8, 9, 14);
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+#regiones .region-info h1 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+#regiones .region-info h2 {
+    color: rgb(46, 120, 102);
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#regiones .region-img {
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+#regiones .region-img:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+}
+
+#regiones .region-img img {
+    transition: .3s ease transform;
+}
+
+#regiones .region-item:hover .project-img img {
+    transform: scale(1.1);
+}
+
+
+/* End Regiones Section */
+
+
+/* Media Query For Tablet */
+
+@media only screen and (min-width:768px) {
+    h1.section-title {
+        font-size: 6rem;
+    }
+    /* Hero */
+    #hero h1 {
+        font-size: 7rem;
+    }
+    /* End Hero */
+    /* Efectos Section */
+    #efectos .efecto-bottom .efecto-item {
+        flex-basis: 45%;
+        margin: 2.5%;
+    }
+    /* End Efectos Section */
+    /* Regiones Section */
+    #regiones .region-item {
+        flex-direction: row;
+    }
+    #regiones .region-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    #regiones .region-item {
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    #regiones .all-regiones .region-info {
+        height: 100%;
+    }
+    #regiones .all-regiones .region-img {
+        height: 100%;
+    }
+    /* End Regiones Section */
+}
+
+
+/* End Media Query For Tablet */
+
+
+/* Media Query for Desktop */
+
+@media only screen and (min-width:1200px) {
+    #efectos .efecto-bottom .efecto-item {
+        flex-basis: 22%;
+        margin: 1.5%;
+    }
+}
+
+
+/* End Media Query for Desktop */
