@@ -90,7 +90,7 @@ p {
 #hero h1 {
     display: block;
     width: fit-content;
-    font-size: 5rem;
+    font-size: 3rem;
     position: relative;
     color: white;
     letter-spacing: .5rem;
@@ -99,7 +99,7 @@ p {
 #hero p {
     display: block;
     width: fit-content;
-    font-size: 2rem;
+    font-size: 1.8rem;
     position: relative;
     color: rgb(46, 120, 102);
     float: right;
@@ -124,7 +124,7 @@ p {
 }
 
 #efectos .efecto-top {
-    width: 500px;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -293,13 +293,16 @@ p {
 
 /* Media Query For Tablet */
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:480px) {
     h1.section-title {
         font-size: 6rem;
     }
     /* Hero */
     #hero h1 {
-        font-size: 7rem;
+        font-size: 4.2rem;
+    }
+    #hero p {
+        font-size: 2.5rem;
     }
     /* End Hero */
     /* Efectos Section */
@@ -336,7 +339,15 @@ p {
 
 /* Media Query for Desktop */
 
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:768px) {
+    /* Hero */
+    #hero h1 {
+        font-size: 7rem;
+    }
+    #hero p {
+        font-size: 4rem;
+    }
+    /* End Hero */
     #efectos .efecto-bottom .efecto-item {
         flex-basis: 22%;
         margin: 1.5%;
